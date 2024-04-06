@@ -27,7 +27,7 @@
 </script>
 
 <section id="footer">
-    <button class="red">Get in touch</button>
+    <a href="mailto:teejaswan12@gmail.com" class="red"> Get in touch </a>
     <div>
         <nav>
             <ul>
@@ -83,7 +83,7 @@
         max-width: 1.5rem;
         aspect-ratio: 1;
     }
-    button {
+    .red {
         font-size: 2rem;
         color: white;
         background-color: transparent;
