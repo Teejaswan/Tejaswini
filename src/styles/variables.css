@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Banigar";
+    src: url("../assets/fonts/Banigar.otf");
+}
+
+@font-face {
+    font-family: "Canosa";
+    src: url("../assets/fonts/Canosa.otf");
+}
+:root{
+--titlefont : "Banigar";
+--bodyfont : "Canosa";
+
+--secpadblock : 5rem;
+--secpadinline: 1.5rem;
+}

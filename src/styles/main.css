@@ -1,0 +1,33 @@
+@import './reset.css';
+@import './variables.css';
+
+.red:hover {
+    scale: 1.1;
+    transition: all ease 0.4s;
+    background: rgb(255, 0, 0);
+    background: radial-gradient(rgba(255, 0, 0, 0.75) 0%, rgba(255, 255, 255, 0) 60%);
+}
+
+.img-wrap {
+    background: radial-gradient(circle at center, rgba(255, 0, 0, 1) 0%, rgba(255, 0, 0, 0) 90%);
+}
+
+img {
+    position: relative;
+    transition: all 0.4s ease;
+    display: block;
+    opacity: 0.75;
+    -webkit-mask-image: radial-gradient(circle, rgba(255, 0, 0, 1) 0%, rgba(255, 0, 0, 0) 90%);
+    mask-image: radial-gradient(circle, rgba(255, 0, 0, 1) 0%, rgba(255, 0, 0, 0) 90%);
+    -webkit-filter: brightness(0.6)contrast(3.4)hue-rotate(0deg)saturate(9.9);
+    filter: brightness(0.6)contrast(3.4)hue-rotate(0deg)saturate(9.9);
+}
+
+
+img:hover {
+    -webkit-mask-image: none;
+    mask-image: none;
+    -webkit-filter: none;
+    filter: none;
+    opacity: 1;
+}
