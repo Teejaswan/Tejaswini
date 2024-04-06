@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://teejaswan.github.io/Tejaswini/",
+  "homepage": "http://teejaswan.github.io/Tejaswini/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
