@@ -33,6 +33,9 @@ jobs:
         with:
           version: 8.15.4
 
+      - name: Install Dependencies
+        run: pnpm install
+
       - name: Build Repo
         run: pnpm build
 
