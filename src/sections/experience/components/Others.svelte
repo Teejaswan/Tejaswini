@@ -91,7 +91,6 @@
             },
         });
     });
-    import img1 from "../assests/im1.jpg";
     import martin_brand from "../assests/martin_brand.png";
     import sd_brand from "../assests/sd_brand.png";
     import gundus_cd from "../assests/gundus_cd.png";
@@ -99,9 +98,9 @@
     import ill2 from "../assests/ill2.png";
     import ill3 from "../assests/ill3.png";
     import ill4 from "../assests/ill4.png";
-    import tby_1 from "../assests/tby_1.jpeg";
-    import tby_2 from "../assests/tby_2.jpeg";
-    import tby_3 from "../assests/tby_3.jpeg";
+    import tby_1 from "../assests/tby_1.gif";
+    import tby_2 from "../assests/tby_2.gif";
+    import tby_3 from "../assests/tby_3.gif";
     let projectlist = [
         {
             name: "Branding",
