@@ -1,9 +1,5 @@
-<script>
-    import img1 from "../../../assets/im1.jpg";
-    import img2 from "../../../assets/im2.jpg";
-    import img3 from "../../../assets/im3.jpg";
+<!-- <script>
 
-    const images = [img1, img2, img3];
 
     let imageVisible = false;
     let imageX = 0;
@@ -87,4 +83,4 @@
 mask-image: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 70%);
 
     }
-</style>
+</style> -->
