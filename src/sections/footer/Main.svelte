@@ -27,7 +27,7 @@
 </script>
 
 <section id="footer">
-    <a href="mailto:teejaswan12@gmail.com" class="red"> Get in touch </a>
+    <a href="mailto:teejaswan12@gmail.com" class="red git"> Get in touch </a>
     <div>
         <nav>
             <ul>
@@ -92,13 +92,21 @@
     }
 
     h2 {
-        font-size: clamp(6rem, 8rem, 10rem);
+        font-size: 10vw;
         font-family: var(--titlefont);
         transform-origin: right;
     }
     @media screen and (max-width: 700px) {
         h2 {
             font-size: clamp(2rem, 3rem, 5rem);
+        }
+        .git {
+            font-size: 1.5rem;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        div {
+            flex-direction: column;
         }
     }
 </style>

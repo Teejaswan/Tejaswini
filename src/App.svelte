@@ -18,7 +18,7 @@
   main {
     position: relative;
     padding-inline: var(--secpadinline);
-    color: white;
+    color: rgba(255, 255, 255, 0.75);
     overflow-x: hidden;
     font-family: "Canosa";
   }

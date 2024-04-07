@@ -45,11 +45,20 @@
     gap: 1rem;
     margin-block-end: 2rem;
   }
+  .cds div{
+    z-index: 10;
+  }
   .cds img {
     width: 100%;
     margin-inline-end: calc(0px - var(--secpadinline));
     aspect-ratio: 16/9;
     object-fit: cover;
+  }
+  @media screen and (max-width: 850px) {
+    .cds a{
+      scale: 1.75;
+      transform-origin: right;
+    }
   }
   .description {
     display: flex;
@@ -58,7 +67,7 @@
   }
   h3 {
     font-family: "Banigar";
-    font-size: 4rem;
+    font-size: clamp(3rem,3.5rem,4rem);
   }
 
   @media screen and (max-width: 700px) {

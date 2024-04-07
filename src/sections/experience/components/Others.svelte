@@ -15,6 +15,7 @@
             xPercent: -100 * (sections.length - 1),
             ease: "none",
             scrollTrigger: {
+                start: "center center",
                 trigger: container,
                 pin: true,
                 scrub: 1,
@@ -147,7 +148,6 @@
     <div class="section branding">
         <div class="images">
             {#each projectlist[0]["projects"] as projects, i}
-                {console.log(projectlist[0]["projects"].length - 1 == i)}
                 <a
                     href={i == 0
                         ? "https://www.behance.net/gallery/183311335/Brand-Identity-Martin-Zest "
@@ -158,8 +158,8 @@
                         class="img-wrap"
                         bind:this={first}
                         style={projectlist[0]["projects"].length - 1 == i
-                            ? "width:20vw;aspect-ratio:3/4;transform:translate(150px,-100px)"
-                            : "width:35vw"}
+                            ? "width:max(25vw,35vh);aspect-ratio:3/4;transform:translate(150px,-100px)"
+                            : "width:max(45vw,55vh);"}
                     >
                         <img
                             src={projects.img}
@@ -209,7 +209,7 @@
                         src={projects.img}
                         alt={projects.name}
                         style={i == 1 || i == 3
-                            ? "transform:translateY(200px);"
+                            ? "transform:translateY(15vh);"
                             : ""}
                         class="illu-img"
                     />
@@ -234,7 +234,9 @@
                     <img
                         src={projects.img}
                         alt={projects.name}
-                        style="width: 20vw;aspect-ratio:1;"
+                        style={i == 0
+                            ? "width:40vw;aspect-ratio:1;"
+                            : "width:20vw;aspect-ratio:1;"}
                     />
                 </a>
             {/each}
@@ -276,25 +278,33 @@
         justify-items: center;
     }
     h2 {
-        font-size: 5rem;
         font-family: var(--titlefont);
+        font-size: 6vw;
     }
-    @media screen and (max-width: 700px) {
-        h2 {
-            font-size: clamp(2rem, 3rem, 5rem);
-        }
-    }
+
     p {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
     @media screen and (max-width: 700px) {
         p {
             font-size: clamp(0.5rem, 0.75rem, 1rem);
         }
+        .branding .content {
+            align-self: self-end;
+            margin-bottom: 20%;
+        }
+        .illustrations img {
+            scale: 2;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .illustrations .content {
+            margin-bottom: 50vh;
+        }
     }
 
     img {
-        width: 35vw;
+        width: max(45vw, 55vh);
         aspect-ratio: 16/9;
         object-fit: cover;
     }
@@ -314,6 +324,9 @@
     .illustrations .images {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+    }
+    .illustrations img {
+        width: 20vw;
     }
     .motion .images {
         display: grid;

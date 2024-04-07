@@ -9,25 +9,7 @@
     }
 
     function onMouseMove(e) {
-        if (moving) {
-            // Get the boundaries of the Main component
-            // const mainWidth = window.innerWidth;
-            // const mainHeight = window.innerHeight;
-
-            // // Calculate the new position
-            // const newLeft = left + e.movementX;
-            // const newTop = top + e.movementY;
-
-            // // Check if the new position is within the boundaries
-            // if (
-            //     newLeft >= 0 &&
-            //     newTop >= 0 &&
-            //     newLeft <= mainWidth &&
-            //     newTop <= mainHeight
-            // ) {
-            //     left = newLeft;
-            //     top = newTop;
-            // }
+        if (moving){
 
             left += e.movementX;
             top += e.movementY;
@@ -43,7 +25,7 @@
 <section
     on:mousedown={onMouseDown}
     style="left: {left}px; top: {top}px;"
-    class="draggable"
+    class="draggable" 
 >
     <slot />
 </section>
